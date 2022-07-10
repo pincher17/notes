@@ -1,0 +1,81 @@
+.wrapper_all{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note{
+    width: 519px;
+    min-height: 235px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textarea{
+    margin-top: 15px;
+    font-size: 16px;
+    height: 140px;
+}
+
+.btn_note{
+    width: 275px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+%btn{
+    background-color: rgb(15, 39, 146);
+        color:rgb(235, 235, 235);
+        font-weight:bold;
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+  }
+
+  .btn_edit{
+      @extend %btn;
+  }
+
+  .btn_delete{
+      @extend %btn;
+      border: 2px solid rgb(15, 39, 146);
+      color: rgb(15, 39, 146);
+      background-color: rgb(255, 255, 255);;
+  }
+
+
+  @media (max-width: 1200px){
+    .wrapper_all{
+      max-width: 970px;
+    }
+    .note{
+        width: 400px;
+    }
+  }
+
+  @media (max-width: 992px){
+    .wrapper_all{
+      max-width: 750px;
+    }
+    .note{
+        width: 680px;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .wrapper_all{
+      max-width: none;
+      
+    }
+  }

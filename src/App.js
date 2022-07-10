@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import CreateNotes from './components/CreateNotes/CreateNotes.jsx';
+import Notes from './components/Notes/Notes.jsx';
+import SelectTags2 from './components/Filter/SelectTags2.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React2
-        </a>
-      </header>
+    <div className='App'>
+    <CreateNotes />
+    <SelectTags2 />
+    <Notes />
     </div>
   );
 }

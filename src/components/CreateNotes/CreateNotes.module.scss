@@ -1,0 +1,67 @@
+.wrapper_all{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 770px;
+}
+
+.headline{
+    font-size: 35px;
+}
+
+.wrapper_textarea{
+  max-width: 1200px;
+
+    .textarea{
+        resize: none;
+        width: 100%;
+        height: 90px;
+    }
+    
+    .btn_create_note{
+        background-color: rgb(15, 39, 146);
+        color:rgb(235, 235, 235);
+        font-weight:bold;
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+@media (max-width: 992px){
+    .wrapper_all{
+      max-width: 750px;
+    }
+  }
+
+  @media (max-width: 797px){
+    .wrapper_textarea{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn_create_note{
+        margin-top: 15px;
+    }
+    .textarea{
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .wrapper_all{
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 549px){
+    .wrapper_all{
+      max-width: none;
+    }
+  }
